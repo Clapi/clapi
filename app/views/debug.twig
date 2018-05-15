@@ -1,0 +1,39 @@
+{% extends '/layout/app.twig' %}
+
+{% block content %}
+    <div class="debug">
+        <nav>
+            <ul>
+                <li class="title"><a href=""><img src="/assets/images/brand/logo.png" alt=""> Lapi Debug</a></li>
+                <li><a class="active" href=""><i class="mdi mdi-code-braces"></i> Api Tester</a></li>
+                <li><a href=""><i class="mdi mdi-view-grid"></i> Request Viewer</a></li>
+                <li><a href=""><i class="mdi mdi-view-grid"></i> Response Viewer</a></li>
+                <li><a href=""><i class="mdi mdi-view-grid"></i> Headers Viewer</a></li>
+                <li><a href=""><i class="mdi mdi-format-list-bulleted"></i> Route</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="api-tester">
+                <div class="api-tester_header">
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">Get</option>
+                            <option value="">Post</option>
+                            <option value="">Put</option>
+                            <option value="">Patch</option>
+                            <option value="">Delete</option>
+                        </select>
+                        <input type="text">
+                        <button>Send</button>
+                    </form>
+                </div>
+            </section>
+            <section class="api-render">
+                <div class="api-render_header">
+                    <span>Status</span>
+                    <span>Time</span>
+                </div>
+            </section>
+        </main>
+    </div>
+{% endblock %}

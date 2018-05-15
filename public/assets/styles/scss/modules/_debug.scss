@@ -1,0 +1,72 @@
+.debug {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: lighten($themedefault, 3);
+
+  nav {
+    width: 300px;
+    background-color: darken($themedefault, 5);
+    height: 100%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+    li{
+      display: flex;
+      width: 100%;
+      .active {
+        background-image: linear-gradient(to right, #292c3d, #282b3b, #272939, #262838, #252736);
+        border-left: 2px solid $blue;
+      }
+      a {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        background-color: transparent;
+        border-left: 2px solid transparent;
+        &:hover {
+          background-image: linear-gradient(to right, #292c3d, #282b3b, #272939, #262838, #252736);
+          border-left: 2px solid $blue;
+        }
+        i {
+          display: flex;
+          align-items: center;
+        }
+      }
+      img {
+        height: 25px;
+      }
+      .title {
+        font-size: 35px;
+      }
+    }
+  }
+  main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .api-tester {
+      width: 50%;
+      .api-tester_header {
+        height: 65px;
+        width: 100%;
+        display: flex;
+        background-color: darken($themedefault, 5);
+      }
+    }
+    .api-render {
+      background-color: $themedefault;
+      width: 50%;
+      .api-render_header {
+        height: 65px;
+        width: 100%;
+        display: flex;
+        background-color: darken($themedefault, 5);
+      }
+    }
+  }
+}

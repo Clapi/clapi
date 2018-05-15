@@ -1,0 +1,38 @@
+{
+    "name": "helixar/clapi",
+    "description": "a fast PHP api framework",
+    "type": "framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Helixar",
+            "email": "contact@cloudnde.fr",
+            "homepage": "https://cloudnode.fr"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.4",
+        "guzzlehttp/psr7": "^1.4",
+        "php-di/php-di": "^5.4",
+        "psr/log": "^1.0",
+        "zendframework/zend-expressive-fastroute": "^3.0",
+        "psr/http-server-middleware": "^1.0",
+        "http-interop/http-middleware": "^0.5.0",
+        "http-interop/response-sender": "^1.0",
+        "middlewares/whoops": "^1.0",
+        "swiftmailer/swiftmailer": "^6.0",
+        "symfony/dotenv": "^4.0"
+    },
+    "require-dev": {
+        "robmorgan/phinx": "^0.9.2",
+        "phpunit/phpunit": "^6.5",
+        "fzaninotto/faker": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Clapi\\": "src/",
+            "Test\\": "tests/"
+        }
+    }
+}
